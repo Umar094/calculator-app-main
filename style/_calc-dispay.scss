@@ -1,0 +1,16 @@
+.calc-wrapper__calc-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-x: hidden;
+    height: 4.5rem;
+    padding: 28px;
+    background-color: var(--screen-background);
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.calc-wrapper__display-display-num{
+    color: var(--header-text);
+    font-size: 3.3rem;
+}

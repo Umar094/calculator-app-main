@@ -5,22 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
   
   <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="calc-wrapper">
 
+    <!-- head -->
+    <header class="calc-wrapper__header">
+      <span class="calc-wrapper__header-calc">calc</span>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="theme-toggle-wrapper">
+        <span class="theme-toggle-wrapper-text">THEME</span>
+          <div>
+            <div class="theme-num-wrapper">
+              <span class="theme-num">1</span>
+              <span class="theme-num">2</span>
+              <span class="theme-num">3</span>
+            </div>
+
+            <div class="theme-toggle-box" onclick="themeToggle()">
+              <div data-theme-circle class="theme-toggle-circle theme1"></div>
+            </div>
+          </div>
+      </div>
+
+    </header>
+
+    <!-- display -->
+    <div class="calc-wrapper__calc-display">
+      <span data-calc-display class="calc-wrapper__display-display-num"></span>
+    </div>
+
+    <!-- count -->
+    <div data-calc-btn class="calc-wrapper__count-wrapper">
+      <button data-nums class="calc-wrapper__count-wrapper__btn">7</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">8</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">9</button>
+      <button data-calc-del class="calc-wrapper__count-wrapper__btn calc-wrapper__count-wrapper__btn--font-s">DEL</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">4</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">5</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">6</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">+</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">1</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">2</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">3</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">-</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">.</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">0</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">/</button>
+      <button data-nums class="calc-wrapper__count-wrapper__btn">x</button>
+
+      <button data-calc-reset class="calc-wrapper__count-wrapper__btn calc-wrapper__count-wrapper__btn--reset calc-wrapper__count-wrapper__btn--font-s">RESET</button>
+      <button data-equal class="calc-wrapper__count-wrapper__btn calc-wrapper__count-wrapper__btn--equel">=</button>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>

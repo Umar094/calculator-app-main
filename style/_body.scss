@@ -1,0 +1,55 @@
+/* General setting*/
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: League Spartan, sans-serif;
+    background-color: var(--main-background);
+}
+
+button{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.secondTheme{
+    --main-background: hsl(0, 0%, 90%);
+    --toggle-background:hsl(0, 5%, 81%);
+    --screen-background:hsl(0, 0%, 93%);
+  
+    --key-background:hsl(185, 42%, 37%);
+    --key-background-hover:hsl(185, 58%, 25%);
+    --dark-grey-key-shadown:hsl(224, 28%, 35%);
+    --key-background-toggle:hsl(25, 98%, 40%);
+    --dark-red-key-shadow:hsl(25, 99%, 27%);
+    --light-orange-key-background:hsl(45, 7%, 89%);
+    --orange--key-shadow:hsl(35, 11%, 61%);
+  
+    --dark-text:hsl(60, 10%, 19%);
+    --white-text:hsl(0, 0%, 100%);
+    --header-text:hsl(221, 14%, 31%);
+}
+
+.thirdTheme{
+    --main-background: hsl(268, 75%, 9%);
+    --toggle-background:hsl(268, 71%, 12%);
+    --screen-background:hsl(268, 71%, 12%);
+    
+    --key-background:hsl(281, 89%, 26%);
+    --key-background-hover:hsl(185, 58%, 25%);
+    --dark-grey-key-shadown:hsl(285, 91%, 52%);
+    --key-background-toggle:hsl(176, 100%, 44%);
+    --dark-red-key-shadow:hsl(177, 92%, 70%);
+    --light-orange-key-background:hsl(268, 47%, 21%);
+    --orange--key-shadow:hsl(290, 70%, 36%);
+    
+    --dark-text:hsl(52, 100%, 62%);
+    --white-text:hsl(0, 0%, 100%);
+    --header-text:hsl(52, 100%, 62%);
+
+}
+
